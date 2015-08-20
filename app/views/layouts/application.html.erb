@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebsiteDev</title>
+  <title>Midwest Charm Hair and Beauty</title>
   <!-- Bootstrap Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -20,7 +20,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'Midwest Charm Hair and Beauty', root_path, class: 'navbar-brand navbar-left' %>
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <i class="fa fa-scissors"></i>
+        Midwest Charm Hair and Beauty
+      <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">

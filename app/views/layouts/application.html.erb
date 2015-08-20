@@ -4,6 +4,7 @@
   <title>Midwest Charm Hair and Beauty</title>
   <!-- Bootstrap Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,7 +12,7 @@
 <body>
 
 <!-- This is the navigation bar code, this is site wide -->
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   <div class='container'>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -21,6 +22,7 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: 'navbar-brand' do %>
+<!--  <%#= link_to root_path, style: 'color: #D41F9C', class: 'navbar-brand' do %> -->
         <i class="fa fa-scissors"></i>
         Midwest Charm Hair and Beauty
       <% end %>
@@ -29,6 +31,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Blog", blog_path %></li>
+<!--        <li><%#= link_to "About", about_path, style: 'color: #D41F9C' %></li> -->
+<!--        <li><%#= link_to "Blog", blog_path, style: 'color: #D41F9C' %></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
